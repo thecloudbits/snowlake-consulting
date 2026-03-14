@@ -505,8 +505,36 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .cta-inner p {
   font-size: 17px;
   color: rgba(255,255,255,0.75);
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   line-height: 1.65;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 36px;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  transition: color var(--transition);
+  max-width: 420px;
+  text-align: left;
+}
+a.contact-item:hover { color: #fff; }
+.contact-item i {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: rgba(255,255,255,0.55);
 }
 
 .cta-actions {
