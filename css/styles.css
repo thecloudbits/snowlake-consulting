@@ -129,7 +129,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: flex;
   align-items: center;
   gap: 32px;
-  height: 100px;
+  height: 130px;
 }
 
 .nav-logo {
@@ -142,17 +142,18 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   flex-shrink: 0;
 }
 .logo-img {
-  height: 90px;
+  height: 120px;
   width: auto;
   display: block;
 }
 
-/* Footer logo: white background pill so it shows on dark footer */
+/* Footer logo: invert to white on dark background */
 .logo-img--footer {
-  height: 80px;
-  background: #fff;
-  padding: 4px 8px;
-  border-radius: var(--radius-sm);
+  height: 100px;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -185,7 +186,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 .hero-inner {
@@ -582,7 +583,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .nav-links.open {
     display: flex;
     position: fixed;
-    top: 100px;
+    top: 130px;
     left: 0;
     right: 0;
     background: var(--clr-bg);
