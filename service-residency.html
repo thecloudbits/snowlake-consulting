@@ -65,13 +65,17 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="css/styles.css?v=6" />
   <style>
-    html { font-size: 28px !important; }
-    body { font-size: 28px !important; }
-    * { min-font-size: 20px; }
-    p, li, a, span, div, td, th, label, h1, h2, h3, h4, h5, h6 { font-size: 1rem !important; }
-    h1 { font-size: 1.8rem !important; }
-    h2 { font-size: 1.5rem !important; }
-    h3 { font-size: 1.25rem !important; }
+    @media (max-width: 768px) {
+      html { font-size: 22px !important; }
+      body { font-size: 22px !important; }
+      p, li, a, span, div, td, th, label { font-size: 1rem !important; }
+      h1 { font-size: 1.8rem !important; }
+      h2 { font-size: 1.5rem !important; }
+      h3 { font-size: 1.25rem !important; }
+      h4 { font-size: 1.1rem !important; }
+      .btn, .btn-lg { font-size: 1rem !important; }
+      .nav-links.open a { font-size: 1rem !important; }
+    }
   </style>
 </head>
 <body>
