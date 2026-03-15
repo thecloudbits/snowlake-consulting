@@ -904,3 +904,45 @@ a.contact-item:hover { color: #fff; }
   .cta-actions   { flex-direction: column; align-items: center; }
   .stats-grid    { grid-template-columns: repeat(2, 1fr); gap: 24px; }
 }
+
+/* xs — mobile font scaling */
+@media (max-width: 480px) {
+  /* Base */
+  body { font-size: 17px; line-height: 1.75; }
+
+  /* Section descriptions & hero */
+  .hero-desc         { font-size: 18px; }
+  .section-header p  { font-size: 17px; }
+
+  /* Section tag (small pill label) */
+  .section-tag { font-size: 13px; }
+
+  /* Buttons */
+  .btn     { font-size: 16px; }
+  .btn-lg  { font-size: 17px; }
+
+  /* Service / feature cards */
+  .service-card h3   { font-size: 19px; }
+  .service-card p    { font-size: 16px; }
+  .pillar h3         { font-size: 18px; }
+  .pillar p          { font-size: 16px; }
+
+  /* Stats */
+  .stat-label { font-size: 14px; }
+
+  /* Testimonials */
+  .testimonial-text  { font-size: 17px; }
+  .testimonial-author-name { font-size: 15px; }
+  .testimonial-author-role { font-size: 14px; }
+
+  /* Contact details */
+  .contact-item { font-size: 16px; }
+
+  /* Footer */
+  .footer-desc  { font-size: 15px; }
+  .footer-links a { font-size: 15px; }
+  .footer-bottom { font-size: 14px; }
+
+  /* Nav mobile menu */
+  .nav-links.open a { font-size: 17px; }
+}
