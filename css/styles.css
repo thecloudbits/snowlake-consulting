@@ -400,36 +400,82 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .pillar p { font-size: 14px; line-height: 1.65; }
 
-/* ---------- Partners ---------- */
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+/* ---------- Logo Marquee ---------- */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
 }
 
-.partner-badge {
+.logo-marquee-section {
+  padding-block: 72px 0;
+  overflow: hidden;
+}
+.logo-marquee-section--alt {
+  padding-top: 72px;
+}
+.logo-marquee-section .section-header {
+  margin-bottom: 48px;
+}
+
+.marquee-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-block: 24px;
+  /* fade edges */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 40px;
+  will-change: transform;
+}
+.marquee-track--left {
+  animation: marquee-left 28s linear infinite;
+}
+.marquee-track--right {
+  animation: marquee-right 36s linear infinite;
+}
+
+.marquee-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 20px 24px;
+  justify-content: center;
+  height: 72px;
+  padding: 14px 32px;
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
   border-radius: var(--radius-md);
-  font-family: var(--font-head);
-  font-size: 15px;
-  font-weight: 600;
-  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
-}
-.partner-badge:hover {
-  border-color: var(--clr-accent);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
-}
-.partner-badge i {
-  width: 20px;
-  height: 20px;
-  color: var(--clr-accent);
   flex-shrink: 0;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.marquee-item:hover {
+  border-color: var(--clr-accent);
+  box-shadow: 0 4px 16px rgba(40,120,190,0.12);
+}
+.marquee-item img {
+  height: 40px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.65);
+  transition: filter var(--transition);
+}
+.marquee-item:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+
+.logo-marquee-section--alt .marquee-item {
+  background: #fff;
 }
 
 /* ---------- About ---------- */
