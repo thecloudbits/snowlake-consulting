@@ -868,10 +868,10 @@ a.contact-item:hover { color: #fff; }
   .section { padding-block: 64px; }
 
   /* Shrink nav logo so it doesn't overflow viewport */
-  .nav        { height: 72px; }
-  .logo-img   { height: 60px; }
-  .hero       { padding-top: 72px; }
-  .page-hero  { padding-top: 72px; }
+  .nav        { height: 100px; }
+  .logo-img   { height: 90px; }
+  .hero       { padding-top: 100px; }
+  .page-hero  { padding-top: 100px; }
 
   .nav-links  { display: none; flex-direction: column; gap: 0; }
   .nav-links.open {
