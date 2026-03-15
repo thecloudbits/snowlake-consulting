@@ -906,53 +906,41 @@ a.contact-item:hover { color: #fff; }
 }
 
 /* xs — mobile font scaling */
-@media (max-width: 480px) {
-  /* Base */
-  body { font-size: 17px; line-height: 1.75; }
+@media (max-width: 768px) {
+  html, body { font-size: 18px !important; line-height: 1.75 !important; }
 
-  /* Hero */
-  .hero-sub    { font-size: 17px; }
-  .hero-badge  { font-size: 14px; }
+  .hero-sub              { font-size: 18px !important; }
+  .hero-badge            { font-size: 15px !important; }
+  .section-tag           { font-size: 14px !important; }
+  .section-header p      { font-size: 18px !important; }
 
-  /* Section labels & descriptions */
-  .section-tag      { font-size: 13px; }
-  .section-header p { font-size: 17px; }
+  .btn                   { font-size: 17px !important; padding: 13px 24px !important; }
+  .btn-lg                { font-size: 18px !important; padding: 16px 30px !important; }
 
-  /* Buttons */
-  .btn    { font-size: 16px; padding: 12px 22px; }
-  .btn-lg { font-size: 17px; padding: 15px 28px; }
+  .svc-card h3           { font-size: 19px !important; }
+  .svc-card p            { font-size: 17px !important; }
+  .svc-link              { font-size: 16px !important; }
 
-  /* Service cards (home grid) */
-  .svc-card h3 { font-size: 18px; }
-  .svc-card p  { font-size: 16px; }
-  .svc-link    { font-size: 15px; }
+  .card h3               { font-size: 20px !important; }
+  .card p                { font-size: 17px !important; }
+  .card-features li      { font-size: 16px !important; }
 
-  /* Feature/info cards */
-  .card p              { font-size: 16px; }
-  .card-features li    { font-size: 16px; }
+  .pillar h4             { font-size: 19px !important; }
+  .pillar p              { font-size: 17px !important; }
 
-  /* Dark section pillars */
-  .pillar h4 { font-size: 18px; }
-  .pillar p  { font-size: 16px; }
+  .stat-label            { font-size: 16px !important; }
 
-  /* Stats */
-  .stat-label { font-size: 15px; }
+  .svc-detail-content h2 { font-size: 22px !important; }
+  .svc-detail-content p  { font-size: 18px !important; }
+  .feature-list li       { font-size: 17px !important; }
+  .related-link          { font-size: 16px !important; }
+  .page-hero p           { font-size: 18px !important; }
 
-  /* Service detail pages */
-  .svc-detail-content p { font-size: 17px; }
-  .feature-list li      { font-size: 16px; }
-  .related-link         { font-size: 15px; }
-  .page-hero p          { font-size: 17px; }
-  .page-hero .breadcrumb { font-size: 14px; }
+  .contact-item          { font-size: 17px !important; }
 
-  /* Contact */
-  .contact-item { font-size: 16px; }
+  .footer-brand p        { font-size: 16px !important; }
+  .footer-links a        { font-size: 16px !important; }
+  .footer-bottom p       { font-size: 15px !important; }
 
-  /* Footer */
-  .footer-brand p   { font-size: 15px; }
-  .footer-links a   { font-size: 15px; }
-  .footer-bottom p  { font-size: 14px; }
-
-  /* Nav mobile menu */
-  .nav-links.open a { font-size: 17px; }
+  .nav-links.open a      { font-size: 18px !important; }
 }
